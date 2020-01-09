@@ -1,0 +1,48 @@
+h1 Header here
+// header code here
+//-
+    header.header#fix-on-scroll-header
+      .header-top
+        .panel.service
+          ul.service-list
+            li.service-element Service1
+            li.service-element Service2
+            li.service-element Service3
+            li.service-element Service4
+            li.service-element Service5
+      .header-bottom
+        .container
+          .header.content
+            span.nav-toggle
+              span Toggle Nav
+            a.logo(href='#', title='Prüfplaketten Onlineshop')
+              img.logo-img(src='img/logo_white.svg', title='Prüfplaketten Onlineshop')
+              img.logo-img-mobile(src='img/logo_text_only_white.svg', title='Prüfplaketten Onlineshop') 
+            .block.block-search
+              .block.block-title
+                strong Suche
+              .block.block-content
+                form.form.search#search-form
+                  .field.search
+                    .control
+                      .wrapper-input
+                        input.input-text#search(type='text',name='q', value='',placeholder='Gesamten Shop durchsuchen...',maxlength='128')
+                  .actions
+                    button.action.search(type='submit',title='Suche',disabled='')
+                      span Suche
+            .link__container-action.account__link
+              a.link.account__link(href='#')
+                span.icon.icon-account
+                span.text Mein Konto
+            .link__container-action.wishlist__link
+              a.link.wishlist__link(href='#')
+                span.icon.icon-wishlist
+                span.text Merkzettel
+            .link__container-action.cart__link
+              a.link.cart__link(href='#')
+                span.icon.icon-basket
+                span.text Warenkorb
+                span.counter.qty.empty
+                  span.counter-number 2
+                  span.counter-label
+//					

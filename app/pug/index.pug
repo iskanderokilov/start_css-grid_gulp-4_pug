@@ -1,0 +1,45 @@
+doctype html
+html(lang='de')
+  head
+    meta(charset='utf8')
+    // <base href='/'>
+    title OptimizedHTML-5-pug
+    meta(name='description', content='')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='Viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    // Template Basic Images Start
+    meta(property='og:image', content='path_to_image/img.jpg')
+    link(href='../img/favicon/favicon.ico', rel='icon')
+    link(href='../img/favicon/apple-touch-icon-180x180.png', rel='apple-touch-icon')
+    // Template Basic Images End
+    // Custom Browsers Color Start
+    meta(name='theme-color', content='#000')
+    //Custom Browsers Color End
+    link(href='../css/styles.min.css', rel='stylesheet')
+  body
+    // custom html here
+    include includes/_mixins.pug
+    include includes/_header.pug
+    include includes/_nav.pug
+    h1 Start_css-grid_gulp-4_pug Template
+    .homepage-wrapper
+      .container
+        .hero
+      section#general
+        .container
+          .general-category
+            // insert all products
+            +product([{name: 'Product 1', price: '3€'}, {name: 'Product 2', price: '4€'}, {name: 'Product 3', price: '1€'} ])
+            // insert products a single
+            +product([{name: 'Product 4', price: '5€'}])
+            +product([{name: 'Product 5', price: '1€'}])
+            +product([{name: 'Product 6', price: '3€'}])
+            +product([{name: 'Product 7', price: '3€'}, {name: 'Product 8', price: '4€'}, {name: 'Product 9', price: '1€'}, {name: 'Product 10', price: '3€'}, {name: 'Product 11', price: '4€'}, {name: 'Product 12', price: '1€'} ])
+              
+            
+    
+    
+    block scripts
+      script(src='../js/scripts.min.js')
+    include includes/_footer.pug
+    

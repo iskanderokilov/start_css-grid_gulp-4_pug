@@ -1,0 +1,9 @@
+mixin product(product_detail)
+  each item in product_detail
+    .product
+      .product__image
+        img(src= item.src)
+      .product__name
+        h4= item.name
+      .product__price
+        span= item.price
